@@ -36,4 +36,4 @@ var cestaVacia = [] // crear un array vacio
 cesta.splice(2, 1)
 
 
-var opcion = prompt("1. Ver elementos de la cesta\n2. Agregar una fruta a la cesta\n3. Eliminar la fruta de la cesta")
+var opcion = prompt("1. Ver elementos de la cesta\n2. Agregar una fruta a la cesta\n3. Eliminar la fruta de la cesta") 
