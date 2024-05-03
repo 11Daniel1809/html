@@ -1,0 +1,7 @@
+var arreglo = new Array(10)
+
+for (let i = 0; i < arreglo.length; i++) {
+     arreglo[i] = i
+}
+
+console.log(arreglo)
