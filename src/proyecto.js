@@ -1,3 +1,4 @@
+
 let arreglo = []
 
 var largo = parseInt(prompt("Digite la cantidad de elementos del arreglo"))
