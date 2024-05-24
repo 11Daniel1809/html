@@ -129,13 +129,13 @@ function posicionElemento(valorNumero) {
 }
 
 
-function invertirArreglo(){
+function invertirArreglo() {
 
      let auxArregloInvertido = []
      auxArregloInvertido.length = arreglo.length
      let auxPosicion = 0
 
-     for(let i = arreglo.length; i >= 0; i--){
+     for (let i = arreglo.length; i >= 0; i--) {
           auxArregloInvertido[auxPosicion] = arreglo[i];
           auxPosicion++;
      }
@@ -143,6 +143,43 @@ function invertirArreglo(){
 }
 
 
+
+function insertarElemento(posicion, valor) {
+
+     //Llenar el auxiliar arreglo 
+     //no sirve hacerlo auxArreglo = arreglos;
+     let auxArreglo = []
+     auxArreglo.length = arreglo.length
+     for (let i = 0; i < arreglo.length - 1; i++) {
+          auxArreglo[i] = arreglo[i]
+     }
+
+     for (let i = posicion; i < arreglo.length - 1; i++) {
+          if (i == posicion) {
+               arreglo[i] = valor
+               arreglo[i + 1] = auxArreglo[i]
+          } else {
+               arreglo[i + 1] = auxArreglo[i]
+          }
+     }
+
+
+
+}
+
+
+function mostrarHileraArreglo() {
+
+     for (let i = 0; i < arreglo.length; i++) {
+          console.log("posicion: " + i + " valor: " + arreglo[i])
+     }
+
+}
+
+
+function finalizarAplicacion() {
+     finalizar = true;
+}
 
 
 
